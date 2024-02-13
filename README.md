@@ -50,8 +50,8 @@ https://nodejs.org/en/
 ```
 https://git-scm.com/download/
 ```
-Если же вы используете файлы проекта из уже имеющегося у вас архива с проектом, то вы можете пропустить этот шаг.
----
+
+## Если же вы используете файлы проекта из уже имеющегося у вас архива с проектом, то вы можете пропустить этот шаг.
 
 ### **4. Развертывание Бэкенда.**
 
@@ -63,6 +63,7 @@ https://git-scm.com/download/
 ```
 git@github.com:Monshou1251/ams_portal.git
 ```
+
 В случае если вы уже имеете файлы проекта, то просто распакуйте их в отдельную папку.
 
 #### **4.2. Перейдите в папку проекта:**
@@ -316,6 +317,7 @@ exasol/docker-db:latest запущен (в графе STATUS будет указ
 ```
 https://downloads.exasol.com/clients-and-drivers/odbc
 ```
+
 На этом шаге также может возникнуть проблема с Microsoft C++, для решения проблема см. п. 4.6.
 
 #### **7.3. Настроен ли ODBC Data Source на вашем компьютере.**
@@ -425,6 +427,7 @@ cd ams_portal/Vector
 ```
 powershell Invoke-WebRequest https://packages.timber.io/vector/0.35.0/vector-x64.msi -OutFile vector-0.35.0-x64.msi
 ```
+
 ```
 .\vector-0.35.0-x64.msi
 ```
@@ -432,8 +435,8 @@ powershell Invoke-WebRequest https://packages.timber.io/vector/0.35.0/vector-x64
 #### **9.2. Настройка Vector**
 
 Далее необходимо настроить конфигурационные файлы. В корневой папке проекта ams найдите папку Vector, в ней
-  лежит пример настройки конфигурационного файла с настройками для хранения логов через Socket:
-  Файл vector_socket_ams.toml:
+лежит пример настройки конфигурационного файла с настройками для хранения логов через Socket:
+Файл vector_socket_ams.toml:
 
 ```
 # В данном блоке, блок [sources], описывается источник получения данных, в данном случае socket
@@ -481,6 +484,7 @@ C:\your_address\Vector\bin\vector" - адрес где установлен ва
 ```
 
 Если возникает ошибка "Непредвиденная лексема "config" в выражении или операторе", введите команду:
+
 ```
 & "C:\your_address\Vector\bin\vector" --config "F:\your_address\Vector\vector_socket_ams.toml"
 ```
@@ -567,6 +571,18 @@ npm run serve
 
 ---
 
+## Лицензия
+
+Этот проект лицензирован под [Лицензией MIT](LICENSE), см. файл LICENSE для получения дополнительной информации.
+
+---
+
 ## Авторы
 
-- ATK Consulting Group
+- Monshou1251
+
+---
+
+## Контакты
+
+Для связи с автором проекта, отправьте электронное письмо по адресу: grigory.urchenko@gmail.com
