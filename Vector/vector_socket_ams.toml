@@ -1,0 +1,38 @@
+#                                    __   __  __
+#                                    \ \ / / / /
+#                                     \ V / / /
+#                                      \_/  \/
+#
+#                                    V E C T O R
+#                                   Configuration
+#
+# ------------------------------------------------------------------------------
+# Website: https://vector.dev
+# Docs: https://vector.dev/docs
+# Chat: https://chat.vector.dev
+# ------------------------------------------------------------------------------
+
+# Send lines from demo log file via socket
+[sources.in]
+type = "socket"
+address = "127.0.0.1:9093"
+mode = "tcp"
+
+# Print parsed logs to stdout
+[sinks.out]
+type = "console"
+inputs = ["in"]
+encoding.codec = "text"
+
+
+# Print parsed logs to file named by {service} field
+[sinks.file]
+type = "file"
+inputs = ["in"]
+encoding.codec = "text"
+path = "C:\\xxx\\ams_portal\\Vector\\Logs\\vector_M-%Y_%m_%d.log"
+
+
+
+
+

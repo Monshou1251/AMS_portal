@@ -1,0 +1,1 @@
+"C:\your_address\Vector\bin\vector" --config "F:\your_address\Vector\vector_socket_ams.toml"
