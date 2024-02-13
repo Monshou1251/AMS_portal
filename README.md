@@ -561,12 +561,13 @@ npm run serve
 
 В работе AMS_portal используются многие проекты с открытым исходным кодом:
 
+- JavaScript
 - Vue 3
 - Vuex
 - Vue Router
 - AG Grid Vue
-- JavaScript
 - Python
+- Django 4x
 - Vector
 
 ---
